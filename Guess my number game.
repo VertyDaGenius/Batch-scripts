@@ -2,27 +2,27 @@ Rem i coded the first few lines
 Rem but the game was made by a fourm 
 Rem https://stackoverflow.com/questions/33275807/whats-wrong-with-this-guess-my-number-batch-game
 @echo off
-color 2
-title Guess the closest number
-echo hello, welcome to guess the closest number!
+ color 2
+ title Guess the closest number
+ echo hello, welcome to guess the closest number!
 
-echo Do you want to learn the rules or play?
-echo if you want to play type in N
-echo if you want to learn the rules type in Y
+ echo Do you want to learn the rules or play?
+ echo if you want to play type in N
+ echo if you want to learn the rules type in Y
 color 4
 set /p input="Do you want to learn the rules? (Y/N)"
-if /I "%input%" EQU "Y" Goto rules
-if /I "%input%" EQU "y" Goto rules
-if /I "%input%" EQU "N" Goto game
-if /I "%input%" EQU "n" Goto game
-pause
-:rules
-echo to play this game you need to type in a number (0-60)
-echo the goal is to guess the closest number to the random set number
-echo the game will tell you if the number is greater or less
-echo press any button to play
-pause
-goto game
+   if /I "%input%" EQU "Y" Goto rules
+   if /I "%input%" EQU "y" Goto rules
+   if /I "%input%" EQU "N" Goto game
+   if /I "%input%" EQU "n" Goto game
+ pause
+ :rules
+  echo to play this game you need to type in a number (0-60)
+  echo the goal is to guess the closest number to the random set number
+  echo the game will tell you if the number is greater or less
+  echo press any button to play
+ pause
+   goto game
 :game 
 color 2
 title Guess My Number (0 to 60)
