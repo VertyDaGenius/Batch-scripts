@@ -2,6 +2,7 @@ Rem i coded the first few lines
 Rem but the game was made by a fourm 
 Rem https://stackoverflow.com/questions/33275807/whats-wrong-with-this-guess-my-number-batch-game
 @echo off
+color 2
 title Guess the closest number
 echo hello, welcome to guess the closest number!
 
@@ -23,6 +24,7 @@ echo press any button to play
 pause
 goto game
 :game 
+color 2
 title Guess My Number (0 to 16)
 
 :Start
@@ -46,6 +48,7 @@ if %key% LSS %in% (
 if %key% == %in% (
     echo CORRECT!
     echo You Guessed it in %attempts% attempts.
+    echo press any button to play again!
     pause
 )
-
+goto game
