@@ -1,5 +1,5 @@
-Rem i coded the first few lines
-Rem but the game was made by a fourm 
+Rem i coded most of this
+Rem but some of the game was made by a fourm 
 Rem https://stackoverflow.com/questions/33275807/whats-wrong-with-this-guess-my-number-batch-game
 @echo off
  color 2
