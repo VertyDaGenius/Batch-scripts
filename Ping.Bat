@@ -1,5 +1,5 @@
 @Echo off
-Rem (PoD is outdated and wont take down an ip, it can however ping one)
+Rem (PoD is outdated and wont take down an ip, it can however ping one, but my PoD isnt working very well)
 Rem I haven't tested this out but in theory this should work. -AndrewTheSkid
 Rem Edit made by AndrewTheSkid (github)
 
