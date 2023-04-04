@@ -17,7 +17,7 @@ Rem Edit made by AndrewTheSkid (github)
  pause
 
    :PoD
-   set /p input="are you sure you want to ping this? (press N to end this script or press Y to ping)"
+ set /p input="are you sure you want to ping this? (press N to end this script or press Y to ping)"
   if /I "%input%" EQU "Y" Goto PingPoD
   if /I "%input%" EQU "y" Goto PingPod
   if /I "%input%" EQU "N" Goto End
