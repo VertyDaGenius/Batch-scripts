@@ -7,7 +7,7 @@ title password generator made by AndrewTheSkid
 
    set pwd=
      for /l %%# in (1,1,%passlength%) do (
-   set /a randomchar=!random! %% 53
+   set /a randomchar=!random! %% 87
    set pwd=!pwd!!pwdchars:~%randomchar%,1!
     )
 
