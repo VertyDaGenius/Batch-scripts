@@ -1,4 +1,6 @@
 @echo off
+echo just tested this out and it doesnt work :(
+pause
 title password generator made by AndrewTheSkid
 
   setlocal EnableDelayedExpansion
