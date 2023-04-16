@@ -35,7 +35,7 @@ for /f "delims=: tokens=*" %%A in ('findstr /b ::: "%~f0"') do @echo(%%A
 
 	set /p ip=Enter a Vulnerable IP Address:
 	set /p count=Enter The Number Of Packets:
-	set /p byte=How Many Bytes Per Packet?:
+	set /p byte=How Many Bytes Per Packet? (max 65500):
 
 	setlocal enabledelayedexpansion
 
