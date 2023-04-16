@@ -56,7 +56,7 @@ title PROGRESS: !sent! out of %count%
 )
 cls
 title Done!
-echo DONE! Sent %ip% %count% Packets %bytes% Per Packet.
+echo DONE! Sent %ip% %count% Packets, %byte% Per Packet.
 echo (please keep in mind alot of packets may have failed to send)
 
 set /p input="Do you want to Ping Another ip?(Y/N)"
