@@ -2,6 +2,7 @@
 cls
 	rem made by Andrew The Skid
 :Skull
+cls
 title Skull Dos                                          
 :::                                                                           
 :::                             (
