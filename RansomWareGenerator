@@ -2,6 +2,7 @@
 rem status: NOT WORKING
 rem made by andrewtheskid
 title File Extention Renamer
+echo status: NOT WORKING
 echo welcome to my File Extention Renamer
 echo -----VERSION 0.9-----
 echo This script basically changes the file extention of selected files 
