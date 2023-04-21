@@ -124,10 +124,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode3
 )
 
-:writecode2
+:writecode3
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
@@ -166,10 +166,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode4
 )
 
-:writecode2
+:writecode4
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
@@ -209,10 +209,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode5
 )
 
-:writecode2
+:writecode5
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
@@ -253,10 +253,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode6
 )
 
-:writecode2
+:writecode6
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
@@ -297,10 +297,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode7
 )
 
-:writecode2
+:writecode7
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
@@ -343,10 +343,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode8
 )
 
-:writecode2
+:writecode8
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
@@ -368,7 +368,7 @@ set /p change9=what file extension do you want it changed to? (ex: .jpg)
 
 echo success!
 pause
-This is the maximum amount of changes you can make, im too lazy to add any more.
+echo This is the maximum amount of changes you can make, im too lazy to add any more.
 pause
 goto final9
 rem ---------------------------------------------------------------------------------------------------------------------
@@ -386,10 +386,10 @@ if exist %outputfile% (
         exit /b 1
     )
 ) else (
-    goto :writecode2
+    goto :writecode9
 )
 
-:writecode2
+:writecode9
 echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
 echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
 echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
