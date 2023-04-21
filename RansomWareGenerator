@@ -1,4 +1,5 @@
 @echo off
+rem status: NOT WORKING
 rem made by andrewtheskid
 title File Extention Renamer
 echo welcome to my File Extention Renamer
