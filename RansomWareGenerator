@@ -135,7 +135,7 @@ echo pause >> %outputfile%
 echo echo %echo3% >> %outputfile%
 echo success! file created, to find the file search the name you set it as in your windows searchbar :)
 
-rem ------------------------------------------------------------------------------------------------------
+rem -----------------------------------------------------------------------------------------------------
 
 :change4
 cls
