@@ -11,8 +11,8 @@ echo because im too lazy to add any more
 pause
 cls
 
-set /p unchange1=what file extension do you want changed?
-set /p change1=what file extension do you want it changed to?
+set /p unchange1=what file extension do you want changed? (ex: .png)
+set /p change1=what file extension do you want it changed to? (ex: .jpg)
 
 echo success!
 pause
