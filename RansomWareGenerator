@@ -1,0 +1,405 @@
+@echo off
+rem made by andrewtheskid
+title Extention Renamer
+echo welcome to my File Extention Renamer
+echo -----VERSION 0.9-----
+echo This script basically changes the file extention of selected files 
+echo on a computer, you can change it to anything to encrypt it as well.
+echo I do not condone usage of this script for unethical/hacking purposes.
+echo this script will let you change up to 9 extentions
+echo because im too lazy to add any more
+pause
+cls
+
+set /p unchange1=what file extension do you want changed?
+set /p change1=what file extension do you want it changed to?
+
+echo success!
+pause
+set /p input=do you want to add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change2
+if "%input%" EQU "y" goto :change2
+if "%input%" EQU "N" goto :final1
+if "%input%" EQU "n" goto :final1
+
+
+rem ------------------------------------------------------------------------------------------
+
+
+:final1
+cls
+set /p name1=what do you want this file to be named?
+set /p echo1=what do you want this file to echo when opened?
+set outputfile=%name1%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode
+)
+
+:writecode
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo1% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+
+
+rem ------------------------------------------------------------------------------------------------
+
+:change2
+cls
+set /p unchange2=what file extension do you want changed? (ex: .png)
+set /p change2=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change3
+if "%input%" EQU "y" goto :change3
+if "%input%" EQU "N" goto :final2
+if "%input%" EQU "n" goto :final2
+
+rem --------------------------------------------------------------------------------------------------
+
+:final2
+cls
+set /p name2=what do you want this file to be named?
+set /p echo2=what do you want this file to echo when opened?
+set outputfile=%name2%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo2% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem----------------------------------------------------------------------------------------------------
+:change3
+cls
+set /p unchange2=what file extension do you want changed? (ex: .png)
+set /p change2=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change4
+if "%input%" EQU "y" goto :change4
+if "%input%" EQU "N" goto :final3
+if "%input%" EQU "n" goto :final3
+
+rem ------------------------------------------------------------------------------------------------------
+
+:final3
+cls
+set /p name3=what do you want this file to be named?
+set /p echo3=what do you want this file to echo when opened?
+set outputfile=%name3%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo3% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem ------------------------------------------------------------------------------------------------------
+
+:change4
+cls
+set /p unchange4=what file extension do you want changed? (ex: .png)
+set /p change4=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change5
+if "%input%" EQU "y" goto :change5
+if "%input%" EQU "N" goto :final4
+if "%input%" EQU "n" goto :final4
+
+rem -------------------------------------------------------------------------------------------------------
+
+:final4
+cls
+set /p name4=what do you want this file to be named? 
+set /p echo4=what do you want this file to echo when opened?
+set outputfile=%name4%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo for /r %%i in (*.%unchange4%) do (ren "%%i" "%%~ni.%change4%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo4% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem -------------------------------------------------------------------------------------------------------------
+
+
+:change5
+cls
+set /p unchange5=what file extension do you want changed? (ex: .png)
+set /p change5=what file extension do you want it changed to? (ex: .jpg)
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change6
+if "%input%" EQU "y" goto :change6
+if "%input%" EQU "N" goto :final5
+if "%input%" EQU "n" goto :final5
+
+rem --------------------------------------------------------------------------------------------------------------
+
+:final5
+cls
+set /p name5=what do you want this file to be named?
+set /p echo5=what do you want this file to echo when opened?
+set outputfile=%name5%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo for /r %%i in (*.%unchange4%) do (ren "%%i" "%%~ni.%change4%") >> %outputfile%
+echo for /r %%i in (*.%unchange5%) do (ren "%%i" "%%~ni.%change5%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo5% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem -------------------------------------------------------------------------------------------------------------
+
+:change6
+cls
+set /p unchange6=what file extension do you want changed? (ex: .png)
+set /p change6=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change7
+if "%input%" EQU "y" goto :change7
+if "%input%" EQU "N" goto :final6
+if "%input%" EQU "n" goto :final6
+
+rem --------------------------------------------------------------------------------------------------------------
+
+:final6
+cls
+set /p name6=what do you want this file to be named?
+set /p echo6=what do you want this file to echo when opened?
+set outputfile=%name6%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo for /r %%i in (*.%unchange4%) do (ren "%%i" "%%~ni.%change4%") >> %outputfile%
+echo for /r %%i in (*.%unchange5%) do (ren "%%i" "%%~ni.%change5%") >> %outputfile%
+echo for /r %%i in (*.%unchange6%) do (ren "%%i" "%%~ni.%change6%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo6% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem ----------------------------------------------------------------------------------------------------------------
+:change7
+cls
+set /p unchange7=what file extension do you want changed? (ex: .png)
+set /p change7=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change8
+if "%input%" EQU "y" goto :change8
+if "%input%" EQU "N" goto :final7
+if "%input%" EQU "n" goto :final7
+
+rem ---------------------------------------------------------------------------------------------------------------
+
+:final7
+cls
+set /p name7=what do you want this file to be named?
+set /p echo7=what do you want this file to echo when opened?
+set outputfile=%name7%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo for /r %%i in (*.%unchange4%) do (ren "%%i" "%%~ni.%change4%") >> %outputfile%
+echo for /r %%i in (*.%unchange5%) do (ren "%%i" "%%~ni.%change5%") >> %outputfile%
+echo for /r %%i in (*.%unchange6%) do (ren "%%i" "%%~ni.%change6%") >> %outputfile%
+echo for /r %%i in (*.%unchange7%) do (ren "%%i" "%%~ni.%change7%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo7% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem -----------------------------------------------------------------------------------------------------------------
+
+:change8
+cls
+set /p unchange8=what file extension do you want changed? (ex: .png)
+set /p change8=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+set /p input=do you want to do add another file change?(Y/N)
+if "%input%" EQU "Y" goto :change9
+if "%input%" EQU "y" goto :change9
+if "%input%" EQU "N" goto :final8
+if "%input%" EQU "n" goto :final8
+
+rem -----------------------------------------------------------------------------------------------------------------
+
+:final8
+cls
+set /p name8=what do you want this file to be named?
+set /p echo8=what do you want this file to echo when opened?
+set outputfile=%name8%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo for /r %%i in (*.%unchange4%) do (ren "%%i" "%%~ni.%change4%") >> %outputfile%
+echo for /r %%i in (*.%unchange5%) do (ren "%%i" "%%~ni.%change5%") >> %outputfile%
+echo for /r %%i in (*.%unchange6%) do (ren "%%i" "%%~ni.%change6%") >> %outputfile%
+echo for /r %%i in (*.%unchange7%) do (ren "%%i" "%%~ni.%change7%") >> %outputfile%
+echo for /r %%i in (*.%unchange8%) do (ren "%%i" "%%~ni.%change8%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo8% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+rem -------------------------------------------------------------------------------------------------------------------
+
+:change9
+cls
+set /p unchange9=what file extension do you want changed? (ex: .png)
+set /p change9=what file extension do you want it changed to? (ex: .jpg)
+
+echo success!
+pause
+This is the maximum amount of changes you can make, im too lazy to add any more.
+pause
+goto final9
+rem ---------------------------------------------------------------------------------------------------------------------
+:final9
+cls
+set /p name9=what do you want this file to be named?
+set /p echo9=what do you want this file to echo when opened?
+set outputfile=%name9%.bat
+
+if exist %outputfile% (
+    set /p overwrite=File already exists. Do you want to overwrite it? (Y/N)
+    if /i "%overwrite%" EQU "Y" (
+        goto :writecode
+    ) else (
+        exit /b 1
+    )
+) else (
+    goto :writecode2
+)
+
+:writecode2
+echo for /r %%i in (*.%unchange1%) do (ren "%%i" "%%~ni.%change1%") >> %outputfile%
+echo for /r %%i in (*.%unchange2%) do (ren "%%i" "%%~ni.%change2%") >> %outputfile%
+echo for /r %%i in (*.%unchange3%) do (ren "%%i" "%%~ni.%change3%") >> %outputfile%
+echo for /r %%i in (*.%unchange4%) do (ren "%%i" "%%~ni.%change4%") >> %outputfile%
+echo for /r %%i in (*.%unchange5%) do (ren "%%i" "%%~ni.%change5%") >> %outputfile%
+echo for /r %%i in (*.%unchange6%) do (ren "%%i" "%%~ni.%change6%") >> %outputfile%
+echo for /r %%i in (*.%unchange7%) do (ren "%%i" "%%~ni.%change7%") >> %outputfile%
+echo for /r %%i in (*.%unchange8%) do (ren "%%i" "%%~ni.%change8%") >> %outputfile%
+echo for /r %%i in (*.%unchange9%) do (ren "%%i" "%%~ni.%change9%") >> %outputfile%
+echo pause >> %outputfile%
+echo echo %echo9% >> %outputfile%
+echo success! file created, to find the file search the name you set it as in your windows searchbar :)
+
+pause
+  exit
