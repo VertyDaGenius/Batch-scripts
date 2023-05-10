@@ -1,6 +1,9 @@
 @echo off
+echo please use this for stress testing your OWN websites.
+echo i am not responsible for any damages caused by this
+pause
 cls
-	rem made by Andrew The Skid
+	rem made by verty da genius
 :Skull
 cls
 title Skull Dos                                          
