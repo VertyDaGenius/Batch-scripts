@@ -28,7 +28,7 @@ Rem Edit made by AndrewTheSkid (github)
    Cls
    set /p IP= Enter IP/Domain:
   :Loop1
-   Ping %IP% -1 65500 -w 1 -n 1
+   Ping -i 255 %IP% -n 1 -w 100 -l 15000
  goto Loop1
 
  :Norm
