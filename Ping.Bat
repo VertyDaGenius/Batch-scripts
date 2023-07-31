@@ -1,7 +1,7 @@
 @Echo off
 Rem (PoD is outdated and wont take down an ip, it can however ping one, but my PoD isnt working very well)
 Rem I haven't tested this out but in theory this should work. -AndrewTheSkid
-Rem Edit made by AndrewTheSkid (github)
+Rem Edit made by vertydagenius (github)
 
    Title Ping script v0.5
    Echo I am not responsible for any damage caused by this
