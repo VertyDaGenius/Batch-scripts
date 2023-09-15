@@ -2,7 +2,7 @@
 color 2
 title ip byter - by verty
 echo I do not take responsibility on any legal repercussions for the usage of this script, nor do I condone unethical hacking.
-timeout /t 2
+timeout /t 6
 cls
 echo welcome to the ip byter!
 echo This script will take a byte out of an ip address.
