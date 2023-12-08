@@ -1,7 +1,7 @@
 @echo off
 echo just tested this out and it doesnt work :(
 pause
-title password generator made by AndrewTheSkid
+title password generator made by verty
 
   setlocal EnableDelayedExpansion
    set /p passlength=Enter The Password Length:
